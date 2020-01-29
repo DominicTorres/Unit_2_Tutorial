@@ -72,3 +72,50 @@ function calCaption(calDate){
 //food[3]= "taco";
 
 //food[3]; //taco
+
+//--------------------------------//
+
+var array = new Array(1,3,5,1,7,4,9,3,2,1,0,9,5,6,9,3,1);
+
+for(var i = 0; i < array.length; i+1){
+   output.innerHTML+= array[i];
+}
+
+//for loop that starts at the first 5
+
+
+for(var i = 2; i < array.length; i+2){
+   output.innerHTML+= array[i];
+}
+
+//for loop that starts at the first number 7 and adds every fifth number then 
+//outputs the added amount
+for(var i = 4; i < array.length; i+5){
+   var added =0;
+   added += array[i];
+}
+output.innerHTML = added;
+
+//for loop that starts at the second 1 and outputs sum of half the array
+for(var i = 3; i < array.length/2; i++){
+   var added =0;
+   added += array[i];
+}
+output.innerHTML = added;
+
+//sort this array least to greatest
+function ascending(a,b){
+   return a - b;
+}
+array.sort(ascending);
+//greatest to least
+function ascending(a,b){
+   return b - a;
+}
+array.sort(descending);
+//or 
+function ascending(a,b){
+   return a - b;
+}
+array.sort(ascending);
+array.reverse();
